@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b3fc1;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#options button.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+#options button.wrong {
+  background-color: #f44336;
+  color: white;
+}
+#result-screen img {
+  margin-bottom: 20px;
+}
+
+#next-btn img {
+  vertical-align: middle;
+}
+
+/* Opcional: ícones para certo/errado */
+#options button.correct::before {
+  content: '';
+  background-image: url('img/verificar.png');
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+#options button.wrong::before {
+  content: '';
+  background-image: url('img/x.png');
+  background-size: 16px 16px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+
+.hide {
+  display: none;
+}

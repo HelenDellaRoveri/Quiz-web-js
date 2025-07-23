@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz de Conhecimentos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <div id="quiz-box">
+        <h1>Quiz de Conhecimentos Gerais</h1>
+            <div id="start-screen">
+                <button onclick="startQuiz()">Começar Quiz</button>
+            </div>
+            <div id="question-screen" class="hide">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-btn" class="hide" onclick="nextQuestion()">Próxima</button>
+            </div>
+
+            <!-- Dentro da div de resultado -->
+            <div id="result-screen" class="hide">
+                <img src="img/premio-de-podio.png" alt="Resultado" width="35">
+                <h2 id="score-text"></h2>
+                <button onclick="startQuiz()">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
